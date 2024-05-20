@@ -2366,6 +2366,7 @@ const character=[
 ];
    const seed=document.getElementById("seed")
    const seed2=document.getElementById("seed2")
+   const book=document.getElementById("book");
    seed.addEventListener("input",reload)
    seed2.addEventListener("input",reload)
    
@@ -2383,6 +2384,5 @@ const character=[
          allstr=allstr+str;
          random=(48271*random) % (2^31-1);
       };
-      var book=document.getElementById("book");
       book.textContent=allstr;
    };
