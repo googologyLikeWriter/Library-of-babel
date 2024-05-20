@@ -2379,8 +2379,7 @@ const character=[
 
       var allstr="";
       for (i=0; i<2000; i++){
-         var rand=Math.floor(Math.random()*character.length);
-         var str=character[rand];
+         var str=character[random];
          allstr=allstr+str;
          random=(48271*random) % (2^31-1);
       };
